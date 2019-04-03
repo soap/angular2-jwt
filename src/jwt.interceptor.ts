@@ -88,7 +88,7 @@ export class JwtInterceptor implements HttpInterceptor {
       request = request.clone();
     } else if (
       token &&
-      this.isWhitelistedDomain(request) &&
+      // this.isWhitelistedDomain(request) &&
       !this.isBlacklistedRoute(request)
     ) {
       request = request.clone({
